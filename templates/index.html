@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>😯😯😯😯😯欢迎来到厚生省公安局刑侦科!!</title>
+</head>
+<style>
+    table {
+        border: solid 3px blue;
+    }
+
+    th, td {
+        border: solid 3px blue;
+    }
+</style>
+<body>
+<div>
+    <form method="post" action="/">
+        用户名:<input type="text" name="username"><br>
+        密&emsp;码:<input type="text" name="password">
+        <br>
+        <button type="submit">提交</button>
+    </form>
+    <table>
+        <tr>
+            <th>用户名</th>
+            <th>密&emsp;码</th>
+        </tr>
+        {% for item in data %}
+            <tr>
+                <td>{{ item.username }}</td>
+                <td>{{ item.password }}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+</div>
+</body>
+</html>
